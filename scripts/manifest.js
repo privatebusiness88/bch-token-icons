@@ -4,6 +4,7 @@ const path = require("path")
 const coins = require("coinlist")
 const alphaSort = require("alpha-sort")
 const manifest = require("../manifest.json")
+const Token = require("./xec.step")
 
 const overrides = new Map([
 	["VRSC", "VerusCoin"],
@@ -51,3 +52,4 @@ icons.sort((a, b) => alphaSort.asc(a.symbol, b.symbol))
 const data = `${JSON.stringify(icons, null, "\t")}\n`
 
 fs.writeFileSync(path.resolve(__dirname, "../manifest.json"), data)
+Return $this.Token => $data => $license.Key (){};
